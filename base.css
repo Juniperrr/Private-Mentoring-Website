@@ -1,0 +1,118 @@
+body {
+	font-family: sans-serif;
+}
+
+h1,
+strong {
+  color: #333;
+}
+
+/* .container {
+	margin-top: 5em;
+} */
+
+ /*
+header {
+	background-color: orange;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 25px 0 black;
+}
+*/	   
+  /* header  {
+	display: inline; /*aligns nav tags horizontally; removes 'list' bullet points
+  } */
+  /* .navbar-brand {
+	color: white;
+  } */
+
+  header li {
+	margin: 10px;
+  }
+  
+  header li a {
+	color: black;
+	text-decoration: none; 
+	}
+	
+  header li a:hover {
+	color: #FF6C00;
+	}
+
+	input {
+		/* display: inline-block; */
+		/* width: 100%; */
+	}
+
+	input[type=text] {
+		display: inline-block;
+		width: 100%;
+	}
+
+	input[type=submit] {
+		line-height:1em;
+		display: block;
+		width: 7em; 
+		margin-bottom: 2em;
+	}
+
+	.pageHeader {
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+
+	.homeForm {
+		position: relative;
+		display: inline-block;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		width: 100%;
+	}
+
+	.homeForm .inputItemPostType {
+		position: relative;
+		display: inline-block; /* This displays the input forms next to each other */
+		/* width: 30.6%; */
+		width: 20%;
+		margin-right: 2em;
+		/* margin-bottom: 1.5em; */
+	}
+
+	.homeForm .inputItemArea {
+		position: relative;
+		display: inline-block; /* This displays the input forms next to each other */
+		/* width: 30.6%; */
+		width: 65%;
+		margin-bottom: 0.5em;
+	}
+
+	.card {
+		margin-bottom: 0.5em;
+		/* background-color: #FFE274; */
+	}
+
+	#postIdP {
+		font-size: 0.8em;
+	}
+
+	.deleteItemPostType > input[type=text] {
+		width: 90%;
+	}
+	/* #createFormElaborate {
+		position: relative;
+		display: inline-block;
+		height: 10em;
+		width: 100%;
+	}
+
+	#createFormElaborate > input[type=text] {
+		position: relative;
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+	} */

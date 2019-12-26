@@ -1,0 +1,75 @@
+<h1>{{title}}</h1>
+
+<div class="pageHeader">
+    <h2>My Posts</h2>
+</div>
+
+<form method = "GET">
+  <div class="homeForm">
+    {{!-- <div class="inputItem">
+      <input type="text" name="postNameQ" placeholder="post title or keyword">
+    </div> --}}
+    <div class="inputItemPostType">
+      <label for="postTypeQ">Created by: </label>
+      <input type="text" name="postTypeQ" placeholder="'Mentee' or 'Mentor'">
+    </div>
+    <div class="inputItemArea">
+      <label for="areaQ">Area of interest: </label>
+      <input type="text" name="areaQ" placeholder="'Academics', 'Career', 'Extracurricular', 'Student life', 'Entertainment', 'Miscellaneous'">
+    </div>
+    <input type="submit" class="btn btn-outline-dark" value="Search">
+  </div>
+</form>
+
+{{#each found}}
+  <div class="card w-100" style="border-color: #FFAE00">
+    <h3 class="card-header" style="background-color: #FFAE00">{{area}}</h3>
+    <div class="card-body">
+      <h5 class="card-title">{{postName}}</h5>
+      <p class="card-text">
+        Post ID: {{_id}}<br>
+        Posting as a: {{postType}}<br>
+        Targeting: year {{targetYear}}<br>
+        ------------------------------------------------------------------<br>
+        Detail: {{detail}}<br>
+        ------------------------------------------------------------------<br>
+        Reach my by: {{userEmail}}, or {{userPhone}}<br>
+        Comments: <br>
+        {{comments}}
+      </p>
+      {{!-- <button type="button" class="btn btn-outline-danger">Danger</button> --}}
+      <a href="/delete/{{_id}}" class="btn btn-outline-dark">Delete this post</a>
+    </div>
+  </div>
+{{/each}}
+
+{{!-- <table>
+  <tr>
+    <th>Post Type</th>
+    <th>Area of Interest</th>
+    <th>Post Name</th>
+    <th>Target Year</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Comments</th>
+    <th>Created Date</th>
+    <th>Close Date</th>
+  </tr>
+  {{#each found}}
+   <tr>
+    <td>{{postType}}</td>
+    <td>{{area}}</td>
+    <td>{{postName}}</td>
+    <td>{{targetYear}}</td>
+    <td>{{userEmail}}</td>
+    <td>{{userPhone}}</td>
+    <td>{{comments}}</td>
+    <td>{{createdAt}}</td>
+    <td>{{closeAt}}</td>
+  </tr>
+  {{/each}}
+</table> --}}
+
+
+
+{{!-- <p>Error: {{error}}</p> --}}

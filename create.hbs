@@ -1,0 +1,70 @@
+<div class="pageHeader">
+    <h2>Add a post</h2>
+</div>
+
+{{!-- <form method = "GET">
+    <div class="reviewForm">
+        <input type="text" name="postNameQ" placeholder="post title or keyword">
+        <input type="text" name="postTypeQ" placeholder="created by: 'mentee' or 'mentor'">
+        <input type="text" name="areaQ" placeholder="area of interest">
+        <input type="submit" value="Search">
+    </div>
+</form> --}}
+
+<form action="" method="POST">
+    <div class="row">
+        <div id="createFormCol" class="col">
+            <label for="postType">Post Type:</label>
+            <input type="text" name="postType" placeholder="type post type">
+        </div>
+        <div id="createFormCol" class="col">   
+            <label for="aera">Area of Interest:</label>
+            <input type="text" name="area" placeholder="type area of interest"> <br><br>
+        </div> 
+    </div>
+    
+            <label for="postName">Post Name:</label>
+            <input type="text" name="postName" placeholder="type post name" id="postName">
+            
+            <br><br>
+    <div class="row">
+        <div id="createFormCol" class="col">
+            <label for="targetYear">Target Year:</label>
+            <input type="number" name="targetYear" placeholder="type target year">
+        </div>
+        <div id="createFormCol" class="col">
+            <label for="user">User:</label>
+            <input type="text" name="courseName" placeholder="type user name"></textarea><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div id="createFormCol" class="col">
+            <label for="userEmail">User Email:</label>
+            <input type="text" name="userEmail" placeholder="type user email"><br><br>
+        </div>
+        <div id="createFormCol" class="col">
+            <label for="userPhone">User Phone:</label>
+            <input type="text" name="userPhone" placeholder="type user phone"><br><br>
+        </div>  
+    </div> 
+    <div class="row">
+        {{!-- <div id="createFormElaborate"> --}}
+            <div id="createFormCol" class="col">
+                <label for="detail">Detail: </label>
+                <input type="text" name="detail" placeholder="You can elaborate here"><br><br>
+            </div>
+        {{!-- </div> --}}
+    </div>  
+    <div class="row">
+        <div id="createFormCol" class="col">
+            <label for="createdAt">Created at:</label>
+            <input type="date" name="createdAt" placeholder="enter date">
+        </div>
+        <div id="createFormCol" class="col">
+            <label for="closeAt">Close at:</label>
+            <input type="date" name="closeAt" placeholder="enter date"><br><br>
+        </div>
+    </div>
+    <input type="submit" value="Add a New Post" style="width: 10em">
+</form>
+{{!-- urlencoded data = form data --}}
